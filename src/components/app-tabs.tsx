@@ -25,10 +25,18 @@ export default function AppTabs() {
         />
       </NativeTabs.Trigger>
 
-      <NativeTabs.Trigger name="profile">
-        <NativeTabs.Trigger.Label>Profile</NativeTabs.Trigger.Label>
+      <NativeTabs.Trigger name="progress">
+        <NativeTabs.Trigger.Label>Progress</NativeTabs.Trigger.Label>
         <NativeTabs.Trigger.Icon
-          sf="person"
+          sf="chart.bar"
+        />
+      </NativeTabs.Trigger>
+
+
+      <NativeTabs.Trigger name="history">
+        <NativeTabs.Trigger.Label>History</NativeTabs.Trigger.Label>
+        <NativeTabs.Trigger.Icon
+          sf="clock"
         />
       </NativeTabs.Trigger>
     </NativeTabs>
