@@ -1,14 +1,14 @@
-import * as Device from 'expo-device';
+import { router } from 'expo-router';
 import { StyleSheet } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { ThemedView } from '@/components/themed-view';
+import StyledButton from '@/components/StyledButton';
 import { BottomTabInset, MaxContentWidth, Spacing } from '@/constants/theme';
 
 export default function HomeScreen() {
   return (
     <ThemedView style={styles.container}>
       <SafeAreaView style={styles.safeArea}>
-        
 
       </SafeAreaView>
     </ThemedView>
@@ -23,6 +23,7 @@ const styles = StyleSheet.create({
   },
   safeArea: {
     flex: 1,
+    justifyContent: 'center',
     paddingHorizontal: Spacing.four,
     alignItems: 'center',
     gap: Spacing.three,
