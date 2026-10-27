@@ -3,7 +3,12 @@
   "version": "1.0.0",
   "main": "expo-router/entry",
   "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
     "@expo/ui": "~58.0.24",
+    "@expo/vector-icons": "^15.0.2",
+    "@mui/icons-material": "^9.5.0",
+    "@mui/material": "^9.5.0",
     "expo": "~58.0.20",
     "expo-constants": "~58.0.13",
     "expo-device": "~58.0.5",
