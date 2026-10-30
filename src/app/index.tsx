@@ -1,15 +1,17 @@
-import { router } from 'expo-router';
-import { StyleSheet } from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context';
 import { ThemedView } from '@/components/themed-view';
-import StyledButton from '@/components/StyledButton';
+import MainHeader from '@/components/ui/main-header';
 import { BottomTabInset, MaxContentWidth, Spacing } from '@/constants/theme';
+import { StyleSheet, View } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 export default function HomeScreen() {
   return (
     <ThemedView style={styles.container}>
       <SafeAreaView style={styles.safeArea}>
+        <View style={styles.heroSection}>
 
+          <MainHeader firstname="John" />
+        </View>
       </SafeAreaView>
     </ThemedView>
   );
@@ -18,21 +20,16 @@ export default function HomeScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
     flexDirection: 'row',
   },
   safeArea: {
     flex: 1,
-    justifyContent: 'center',
     paddingHorizontal: Spacing.four,
-    alignItems: 'center',
     gap: Spacing.three,
     paddingBottom: BottomTabInset + Spacing.three,
     maxWidth: MaxContentWidth,
   },
   heroSection: {
-    alignItems: 'center',
-    justifyContent: 'center',
     flex: 1,
     paddingHorizontal: Spacing.four,
     gap: Spacing.four,
